@@ -1,3 +1,16 @@
+/**
+ * サイドバーコンポーネント
+ *
+ * このファイルは会話履歴を表示するサイドバーを定義します。
+ *
+ * 【機能】
+ * - 会話履歴一覧の表示
+ * - 会話の選択
+ * - 会話の削除
+ * - モバイル対応（オーバーレイ表示）
+ * - レスポンシブデザイン（デスクトップでは常に表示）
+ */
+
 'use client'
 
 import { MessageSquare, Trash2, X } from 'lucide-react'
@@ -5,19 +18,21 @@ import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { cn } from '@/lib/utils'
 
+// 会話アイテムの型定義
 export interface ConversationItem {
-  _id: string
-  title: string
-  updatedAt: string
+  _id: string          // 会話の一意識別子
+  title: string        // 会話のタイトル
+  updatedAt: string    // 最終更新日時
 }
 
+// サイドバーのプロパティ
 interface SidebarProps {
-  conversations: ConversationItem[]
-  currentConversationId: string | null
-  isOpen: boolean
-  onClose: () => void
-  onSelectConversation: (id: string) => void
-  onDeleteConversation: (id: string) => void
+  conversations: ConversationItem[]                    // 表示する会話一覧
+  currentConversationId: string | null                // 現在選択中の会話ID
+  isOpen: boolean                                      // サイドバーの開閉状態（モバイル用）
+  onClose: () => void                                  // 閉じるボタンのコールバック
+  onSelectConversation: (id: string) => void          // 会話選択時のコールバック
+  onDeleteConversation: (id: string) => void          // 会話削除時のコールバック
 }
 
 export function Sidebar({

@@ -1,3 +1,15 @@
+/**
+ * コードブロックコンポーネント
+ *
+ * このファイルはコードブロックをシンタックスハイライト付きで表示するコンポーネントを定義します。
+ *
+ * 【機能】
+ * - シンタックスハイライト（言語に応じた色付け）
+ * - コピーボタン（コードをクリップボードにコピー）
+ * - 言語表示（コードブロックのヘッダー部分）
+ * - ダークテーマ（One Dark スタイル）
+ */
+
 'use client'
 
 import { useState } from 'react'
@@ -7,8 +19,8 @@ import { Check, Copy } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 interface CodeBlockProps {
-  language?: string
-  children: string
+  language?: string    // プログラミング言語（例: 'javascript', 'python'）
+  children: string     // コード本文
 }
 
 export function CodeBlock({ language, children }: CodeBlockProps) {

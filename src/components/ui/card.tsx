@@ -1,3 +1,9 @@
+/**
+ * カードコンポーネント（shadcn/ui）
+ *
+ * このファイルはコンテンツをカード形式で表示するコンポーネントを定義します。
+ */
+
 import * as React from "react"
 
 import { cn } from "@/lib/utils"

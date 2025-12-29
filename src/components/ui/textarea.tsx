@@ -1,3 +1,9 @@
+/**
+ * テキストエリアコンポーネント（shadcn/ui）
+ *
+ * このファイルは複数行のテキスト入力フィールドコンポーネントを定義します。
+ */
+
 import * as React from "react"
 
 import { cn } from "@/lib/utils"

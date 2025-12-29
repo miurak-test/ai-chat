@@ -1,3 +1,15 @@
+/**
+ * ヘッダーコンポーネント
+ *
+ * このファイルはアプリケーションの上部に表示されるヘッダーを定義します。
+ *
+ * 【機能】
+ * - メニューボタン（モバイル用サイドバー表示）
+ * - アプリケーションタイトル表示
+ * - 新規チャット作成ボタン
+ * - テーマ切り替えボタン（ダークモード/ライトモード）
+ */
+
 'use client'
 
 import { Menu, MessageSquarePlus } from 'lucide-react'
@@ -5,8 +17,8 @@ import { Button } from '@/components/ui/button'
 import { ThemeToggle } from './theme-toggle'
 
 interface HeaderProps {
-  onMenuClick: () => void
-  onNewChat: () => void
+  onMenuClick: () => void    // メニューボタンクリック時のコールバック
+  onNewChat: () => void      // 新規チャットボタンクリック時のコールバック
 }
 
 export function Header({ onMenuClick, onNewChat }: HeaderProps) {

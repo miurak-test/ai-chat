@@ -1,3 +1,9 @@
+/**
+ * セパレーターコンポーネント（shadcn/ui）
+ *
+ * このファイルはコンテンツを視覚的に区切る区切り線コンポーネントを定義します。
+ */
+
 "use client"
 
 import * as React from "react"
