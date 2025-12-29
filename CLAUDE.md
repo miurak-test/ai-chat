@@ -26,9 +26,9 @@ ai-chat
 - **言語**: TypeScript
 
 ### AI
-- **プロバイダー**: Anthropic
-- **モデル**: Claude API (Claude 3.5 Sonnet など)
-- **SDK**: @anthropic-ai/sdk
+- **プロバイダー**: Google Cloud Vertex AI
+- **モデル**: Gemini 2.0 Flash
+- **SDK**: @google-cloud/vertexai
 
 ### データベース
 - **DB**: MongoDB Atlas
@@ -47,16 +47,16 @@ ai-chat
 ## 機能要件
 
 ### コア機能
-- [ ] AIとのチャット機能
-- [ ] ストリーミング応答（リアルタイム表示）
-- [ ] 会話履歴の保存・読み込み
+- [x] AIとのチャット機能
+- [x] ストリーミング応答（リアルタイム表示）
+- [x] 会話履歴の保存・読み込み
 
 ### UI機能
-- [ ] Markdownレンダリング
-- [ ] コードブロックのシンタックスハイライト
-- [ ] ダークモード / ライトモード切り替え
-- [ ] 応答のコピーボタン
-- [ ] レスポンシブデザイン
+- [x] Markdownレンダリング
+- [x] コードブロックのシンタックスハイライト
+- [x] ダークモード / ライトモード切り替え
+- [x] 応答のコピーボタン
+- [x] レスポンシブデザイン
 
 ### 認証
 - 認証機能なし（セッションベースで会話を管理）
@@ -80,7 +80,7 @@ ai-chat/
 │   │   └── layout/            # Layout components
 │   ├── lib/                   # Utility functions
 │   │   ├── db/                # Database connection
-│   │   ├── anthropic.ts       # Anthropic client
+│   │   ├── gemini.ts          # Gemini AI client
 │   │   └── utils.ts           # Helper functions
 │   ├── models/                # Mongoose models
 │   │   ├── conversation.ts    # Conversation schema
@@ -138,28 +138,83 @@ ai-chat/
 ```json
 {
   "message": "string",
-  "conversationId": "string | null"
+  "conversationId": "string | null",
+  "sessionId": "string"
 }
 ```
 
-**Response:** Server-Sent Events (ストリーミング)
+**Response:** Server-Sent Events (SSE) ストリーミング
+```
+data: {"type":"text","text":"AIからの"}
+data: {"type":"text","text":"応答テキスト"}
+data: {"type":"done","conversationId":"abc123"}
+```
+
+**Error Response:**
+```
+data: {"type":"error","error":"エラーメッセージ"}
+```
 
 ### GET /api/conversations
 会話一覧を取得
 
+**Query Parameters:**
+- `sessionId`: ユーザーのセッションID（必須）
+
+**Response:**
+```json
+[
+  { "_id": "abc123", "title": "会話タイトル", "createdAt": "...", "updatedAt": "..." }
+]
+```
+
 ### GET /api/conversations/[id]
 特定の会話とメッセージを取得
 
+**Response:**
+```json
+{
+  "_id": "abc123",
+  "title": "会話タイトル",
+  "sessionId": "session_xxx",
+  "createdAt": "...",
+  "updatedAt": "...",
+  "messages": [
+    { "_id": "msg1", "role": "user", "content": "こんにちは", "createdAt": "..." },
+    { "_id": "msg2", "role": "assistant", "content": "こんにちは！", "createdAt": "..." }
+  ]
+}
+```
+
 ### DELETE /api/conversations/[id]
-会話を削除
+会話を削除（関連するメッセージも全て削除）
+
+**Response:**
+```json
+{ "success": true }
+```
+
+### PATCH /api/conversations/[id]
+会話のタイトルを更新
+
+**Request Body:**
+```json
+{ "title": "新しいタイトル" }
+```
+
+**Response:**
+```json
+{ "_id": "abc123", "title": "新しいタイトル", ... }
+```
 
 ---
 
 ## 環境変数
 
 ```env
-# Anthropic API
-ANTHROPIC_API_KEY=your_api_key
+# Google Cloud Vertex AI
+GCP_PROJECT_ID=your-project-id
+GCP_LOCATION=us-central1
 
 # MongoDB
 MONGODB_URI=mongodb+srv://...
@@ -167,6 +222,11 @@ MONGODB_URI=mongodb+srv://...
 # App
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
+
+### 認証設定
+Vertex AI は Application Default Credentials (ADC) を使用します:
+- **ローカル開発**: `gcloud auth application-default login` を実行
+- **Cloud Run**: 自動的にサービスアカウントの認証情報を使用
 
 ---
 
@@ -252,7 +312,7 @@ gcloud run deploy ai-chat --image gcr.io/[PROJECT_ID]/ai-chat --platform managed
 ## 参考リンク
 
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Anthropic API Documentation](https://docs.anthropic.com/)
+- [Vertex AI Gemini Documentation](https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini)
 - [shadcn/ui Documentation](https://ui.shadcn.com/)
 - [Mongoose Documentation](https://mongoosejs.com/docs/)
 - [Cloud Run Documentation](https://cloud.google.com/run/docs)
