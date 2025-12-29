@@ -1,179 +1,282 @@
 <mxfile host="app.diagrams.net" modified="2024-12-29T00:00:00.000Z" agent="Mozilla/5.0" etag="ai-chat-architecture" version="22.1.0" type="device">
   <diagram name="システム構成図" id="system-architecture">
-    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
         <!-- Title -->
-        <mxCell id="title" value="AI Chat システム構成図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="400" y="20" width="300" height="40" as="geometry" />
+        <mxCell id="title" value="AI Chat システム構成図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="400" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Google Cloud Logo -->
+        <mxCell id="gcp-logo" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://www.gstatic.com/devrel-devsite/prod/v0e0f589edd85502a40d78d7d0825db8ea5ef3b99ab4070381ee86977c9168730/cloud/images/cloud-logo.svg" vertex="1" parent="1">
+          <mxGeometry x="300" y="85" width="120" height="25" as="geometry" />
         </mxCell>
 
         <!-- User Section -->
-        <mxCell id="user-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="40" y="100" width="160" height="200" as="geometry" />
+        <mxCell id="user-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="160" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="user-label" value="ユーザー" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="80" y="110" width="80" height="20" as="geometry" />
+        <mxCell id="user-label" value="ユーザー" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="user-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://www.gstatic.com/images/branding/product/2x/chrome_48dp.png" vertex="1" parent="1">
-          <mxGeometry x="80" y="150" width="80" height="80" as="geometry" />
+        <mxCell id="user-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://fonts.gstatic.com/s/i/materialicons/person/v12/24px.svg" vertex="1" parent="1">
+          <mxGeometry x="85" y="170" width="70" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="user-desc" value="Webブラウザ&#xa;(PC/スマホ)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="60" y="240" width="120" height="40" as="geometry" />
+        <mxCell id="user-desc" value="Webブラウザ&#xa;(PC / スマートフォン)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="140" height="50" as="geometry" />
         </mxCell>
 
         <!-- Google Cloud Section -->
-        <mxCell id="gcp-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="280" y="80" width="600" height="380" as="geometry" />
+        <mxCell id="gcp-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#4285F4;strokeWidth=3;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="620" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="gcp-label" value="Google Cloud (プロジェクト: miuken)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="290" y="90" width="280" height="20" as="geometry" />
-        </mxCell>
-
-        <!-- Cloud Run -->
-        <mxCell id="cloudrun-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="320" y="130" width="200" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="cloudrun-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://symbols.getvecta.com/stencil_4/45_google-cloud-run.c5765dd666.svg" vertex="1" parent="1">
-          <mxGeometry x="380" y="140" width="60" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="cloudrun-label" value="Cloud Run" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="360" y="200" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="cloudrun-desc" value="アプリケーション&#xa;(Next.js)&#xa;&#xa;・チャット画面&#xa;・API処理&#xa;・認証処理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="330" y="220" width="180" height="80" as="geometry" />
+        <mxCell id="gcp-label" value="プロジェクト: miuken" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="430" y="88" width="200" height="20" as="geometry" />
         </mxCell>
 
-        <!-- Vertex AI -->
-        <mxCell id="vertexai-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="600" y="130" width="160" height="140" as="geometry" />
+        <!-- Cloud Run with GCP Icon -->
+        <mxCell id="cloudrun-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4285F4;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="140" width="220" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="vertexai-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://symbols.getvecta.com/stencil_4/8_google-cloud-ai-platform.90fef4e5ae.svg" vertex="1" parent="1">
-          <mxGeometry x="650" y="140" width="60" height="60" as="geometry" />
+        <mxCell id="cloudrun-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://www.gstatic.com/pantheon/images/welcome/supercloud.svg" vertex="1" parent="1">
+          <mxGeometry x="395" y="150" width="70" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="vertexai-label" value="Vertex AI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="640" y="200" width="80" height="20" as="geometry" />
+        <mxCell id="cloudrun-gcp-icon" value="" style="shape=mxgraph.gcp2.cloud_run;html=1;dashed=0;fillColor=#4285F4;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="155" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vertexai-desc" value="Gemini 2.0 Flash&#xa;(AI モデル)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="610" y="225" width="140" height="40" as="geometry" />
+        <mxCell id="cloudrun-label" value="Cloud Run" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#4285F4;" vertex="1" parent="1">
+          <mxGeometry x="370" y="220" width="120" height="25" as="geometry" />
         </mxCell>
-
-        <!-- Artifact Registry -->
-        <mxCell id="artifact-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="600" y="290" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="artifact-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://symbols.getvecta.com/stencil_4/3_google-artifact-registry.e5765a3fe6.svg" vertex="1" parent="1">
-          <mxGeometry x="610" y="300" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="artifact-label" value="Artifact Registry&#xa;(Docker イメージ)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="650" y="305" width="100" height="50" as="geometry" />
+        <mxCell id="cloudrun-desc" value="Next.js アプリケーション&#xa;&#xa;・チャット画面 (UI)&#xa;・API エンドポイント&#xa;・ストリーミング処理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="335" y="250" width="190" height="80" as="geometry" />
         </mxCell>
 
-        <!-- Cloud Build -->
-        <mxCell id="cloudbuild-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="600" y="385" width="160" height="60" as="geometry" />
+        <!-- Vertex AI with GCP Icon -->
+        <mxCell id="vertexai-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#EA4335;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="140" width="180" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="cloudbuild-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://symbols.getvecta.com/stencil_4/19_google-cloud-build.0c665ab8c4.svg" vertex="1" parent="1">
-          <mxGeometry x="610" y="395" width="40" height="40" as="geometry" />
+        <mxCell id="vertexai-gcp-icon" value="" style="shape=mxgraph.gcp2.vertex_ai;html=1;dashed=0;fillColor=#EA4335;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="680" y="155" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cloudbuild-label" value="Cloud Build" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="655" y="405" width="100" height="20" as="geometry" />
+        <mxCell id="vertexai-label" value="Vertex AI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#EA4335;" vertex="1" parent="1">
+          <mxGeometry x="660" y="220" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="vertexai-desc" value="Gemini 2.0 Flash&#xa;生成AIモデル" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="635" y="250" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Artifact Registry with GCP Icon -->
+        <mxCell id="artifact-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FBBC04;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="320" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="artifact-gcp-icon" value="" style="shape=mxgraph.gcp2.artifact_registry;html=1;dashed=0;fillColor=#FBBC04;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="635" y="330" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="artifact-label" value="Artifact Registry" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;fontColor=#FBBC04;" vertex="1" parent="1">
+          <mxGeometry x="690" y="335" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="artifact-desc" value="Docker イメージ保存" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="690" y="355" width="105" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Build with GCP Icon -->
+        <mxCell id="cloudbuild-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#34A853;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="420" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudbuild-gcp-icon" value="" style="shape=mxgraph.gcp2.cloud_build;html=1;dashed=0;fillColor=#34A853;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="635" y="427" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudbuild-label" value="Cloud Build" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;fontColor=#34A853;" vertex="1" parent="1">
+          <mxGeometry x="690" y="435" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudbuild-desc" value="CI/CD ビルド" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="690" y="455" width="100" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- IAM with GCP Icon -->
+        <mxCell id="iam-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9E9E9E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iam-gcp-icon" value="" style="shape=mxgraph.gcp2.cloud_iam;html=1;dashed=0;fillColor=#5F6368;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="330" y="368" width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="iam-label" value="Cloud IAM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="380" y="375" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iam-desc" value="認証・認可" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="380" y="393" width="70" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Secret Manager with GCP Icon -->
+        <mxCell id="secret-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9E9E9E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="360" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-gcp-icon" value="" style="shape=mxgraph.gcp2.secret_manager;html=1;dashed=0;fillColor=#5F6368;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="480" y="368" width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-label" value="Secret Manager" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="525" y="373" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-desc" value="機密情報管理" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="525" y="393" width="80" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Logging with GCP Icon -->
+        <mxCell id="logging-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9E9E9E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="430" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="logging-gcp-icon" value="" style="shape=mxgraph.gcp2.cloud_logging;html=1;dashed=0;fillColor=#5F6368;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="330" y="437" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="logging-label" value="Cloud Logging" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="375" y="445" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Monitoring with GCP Icon -->
+        <mxCell id="monitoring-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9E9E9E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="430" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring-gcp-icon" value="" style="shape=mxgraph.gcp2.cloud_monitoring;html=1;dashed=0;fillColor=#5F6368;strokeColor=none;shadow=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="480" y="437" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring-label" value="Cloud Monitoring" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="523" y="445" width="87" height="20" as="geometry" />
         </mxCell>
 
         <!-- MongoDB Section -->
-        <mxCell id="mongodb-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="320" y="500" width="200" height="120" as="geometry" />
+        <mxCell id="mongodb-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#00684A;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="mongodb-label" value="MongoDB Atlas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="360" y="510" width="120" height="20" as="geometry" />
+        <mxCell id="mongodb-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://www.mongodb.com/assets/images/global/favicon.ico" vertex="1" parent="1">
+          <mxGeometry x="105" y="530" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="mongodb-icon" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="390" y="540" width="60" height="60" as="geometry" />
+        <mxCell id="mongodb-label" value="MongoDB Atlas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#00684A;" vertex="1" parent="1">
+          <mxGeometry x="70" y="585" width="120" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="mongodb-desc" value="会話・メッセージ保存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="330" y="600" width="180" height="20" as="geometry" />
+        <mxCell id="mongodb-desc" value="会話・メッセージ&#xa;データベース" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="60" y="610" width="140" height="35" as="geometry" />
         </mxCell>
 
         <!-- GitHub Section -->
-        <mxCell id="github-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="600" y="500" width="160" height="120" as="geometry" />
+        <mxCell id="github-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#24292E;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="github-label" value="GitHub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="650" y="510" width="60" height="20" as="geometry" />
+        <mxCell id="github-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://github.githubassets.com/favicons/favicon-dark.svg" vertex="1" parent="1">
+          <mxGeometry x="345" y="530" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="github-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" vertex="1" parent="1">
-          <mxGeometry x="655" y="540" width="50" height="50" as="geometry" />
+        <mxCell id="github-label" value="GitHub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#24292E;" vertex="1" parent="1">
+          <mxGeometry x="320" y="585" width="100" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="github-desc" value="ソースコード管理&#xa;CI/CD (Actions)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="610" y="590" width="140" height="30" as="geometry" />
+        <mxCell id="github-desc" value="ソースコード管理&#xa;GitHub Actions (CI/CD)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="290" y="610" width="160" height="35" as="geometry" />
         </mxCell>
 
         <!-- Arrows with numbers -->
-        <mxCell id="arrow1" value="① HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066CC;" edge="1" parent="1" source="user-icon" target="cloudrun-box">
+        <mxCell id="arrow1" value="① HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#4285F4;fontColor=#4285F4;fontStyle=1;fontSize=12;" edge="1" parent="1" source="user-group" target="cloudrun-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow2" value="② API呼出" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#009900;" edge="1" parent="1" source="cloudrun-box" target="vertexai-box">
+        <mxCell id="arrow2" value="② API" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#EA4335;fontColor=#EA4335;fontStyle=1;fontSize=12;" edge="1" parent="1" source="cloudrun-box" target="vertexai-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow3" value="③ データ保存" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#009900;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cloudrun-box" target="mongodb-group">
+        <mxCell id="arrow3" value="③ データ" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#00684A;fontColor=#00684A;fontStyle=1;fontSize=12;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="cloudrun-box" target="mongodb-group">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="290" />
+              <mxPoint x="250" y="510" />
+              <mxPoint x="130" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4" value="④ push" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#24292E;dashed=1;fontColor=#24292E;fontStyle=1;fontSize=11;" edge="1" parent="1" source="github-group" target="cloudbuild-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="585" />
+              <mxPoint x="560" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow5" value="⑤" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34A853;dashed=1;fontColor=#34A853;fontStyle=1;fontSize=11;" edge="1" parent="1" source="cloudbuild-box" target="artifact-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow4" value="④ push" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;" edge="1" parent="1" source="github-group" target="cloudbuild-box">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow5" value="⑤ ビルド" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;" edge="1" parent="1" source="cloudbuild-box" target="artifact-box">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow6" value="⑥ デプロイ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="artifact-box" target="cloudrun-box">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="arrow6" value="⑥ deploy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FBBC04;dashed=1;fontColor=#FBBC04;fontStyle=1;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="artifact-box" target="cloudrun-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="360" />
+              <mxPoint x="570" y="240" />
+            </Array>
+          </mxGeometry>
         </mxCell>
 
         <!-- Legend -->
-        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="900" y="100" width="180" height="200" as="geometry" />
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E0E0;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="120" width="200" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="legend-title" value="凡例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="960" y="110" width="60" height="20" as="geometry" />
+        <mxCell id="legend-title" value="凡例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16" vertex="1" parent="1">
+          <mxGeometry x="1020" y="130" width="60" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="legend1" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0066CC;" edge="1" parent="1">
+        <mxCell id="legend1" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#4285F4;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="920" y="150" as="sourcePoint" />
-            <mxPoint x="970" y="150" as="targetPoint" />
+            <mxPoint x="970" y="175" as="sourcePoint" />
+            <mxPoint x="1030" y="175" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="legend1-text" value="ユーザー通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="980" y="140" width="90" height="20" as="geometry" />
+        <mxCell id="legend1-text" value="ユーザー通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1040" y="165" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="legend2" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#009900;" edge="1" parent="1">
+        <mxCell id="legend2" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#EA4335;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="920" y="180" as="sourcePoint" />
-            <mxPoint x="970" y="180" as="targetPoint" />
+            <mxPoint x="970" y="205" as="sourcePoint" />
+            <mxPoint x="1030" y="205" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="legend2-text" value="内部通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="980" y="170" width="90" height="20" as="geometry" />
+        <mxCell id="legend2-text" value="AI API呼出" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1040" y="195" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="legend3" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;" edge="1" parent="1">
+        <mxCell id="legend3" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#00684A;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="920" y="210" as="sourcePoint" />
-            <mxPoint x="970" y="210" as="targetPoint" />
+            <mxPoint x="970" y="235" as="sourcePoint" />
+            <mxPoint x="1030" y="235" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="legend3-text" value="CI/CD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="980" y="200" width="90" height="20" as="geometry" />
+        <mxCell id="legend3-text" value="DB通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1040" y="225" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#24292E;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="970" y="265" as="sourcePoint" />
+            <mxPoint x="1030" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend4-text" value="CI/CD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1040" y="255" width="100" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Service Colors Legend -->
+        <mxCell id="legend5-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="970" y="295" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend5-text" value="コンピュート" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="995" y="293" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend6-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EA4335;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="295" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend6-text" value="AI/ML" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="1095" y="293" width="50" height="20" as="geometry" />
         </mxCell>
 
         <!-- Data Flow Description -->
-        <mxCell id="flow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="900" y="320" width="180" height="160" as="geometry" />
+        <mxCell id="flow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E0E0;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="360" width="200" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="flow-title" value="データフロー" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="945" y="330" width="90" height="20" as="geometry" />
+        <mxCell id="flow-title" value="データフロー" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16" vertex="1" parent="1">
+          <mxGeometry x="1000" y="370" width="100" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="flow-desc" value="① ユーザーがアクセス&#xa;② AI に問い合わせ&#xa;③ 会話を保存&#xa;④ コードをプッシュ&#xa;⑤ イメージをビルド&#xa;⑥ アプリをデプロイ" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="910" y="355" width="160" height="120" as="geometry" />
+        <mxCell id="flow-desc" value="① ユーザーがアクセス&#xa;② Gemini AI に問合せ&#xa;③ 会話履歴を保存&#xa;④ コードをプッシュ&#xa;⑤ イメージをビルド&#xa;⑥ Cloud Run にデプロイ" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="965" y="400" width="175" height="130" as="geometry" />
         </mxCell>
 
       </root>
