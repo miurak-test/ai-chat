@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:8080"
+    environment:
+      - GCP_PROJECT_ID=${GCP_PROJECT_ID}
+      - GCP_LOCATION=${GCP_LOCATION:-us-central1}
+      - MONGODB_URI=${MONGODB_URI}
+      - NEXT_PUBLIC_APP_URL=http://localhost:3000
+    volumes:
+      # Mount GCP credentials for local development
+      - ${HOME}/.config/gcloud:/home/nextjs/.config/gcloud:ro
+    env_file:
+      - .env.local
+    restart: unless-stopped
+
+  # Optional: Local MongoDB for development
+  mongodb:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=ai-chat
+    profiles:
+      - with-db
+
+volumes:
+  mongodb_data:
