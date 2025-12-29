@@ -1,3 +1,16 @@
+/**
+ * Markdown レンダラーコンポーネント
+ *
+ * このファイルはMarkdown形式のテキストをHTMLに変換して表示するコンポーネントを定義します。
+ *
+ * 【機能】
+ * - Markdown のレンダリング（見出し、リスト、リンク、テーブルなど）
+ * - GFM（GitHub Flavored Markdown）対応
+ * - コードブロックのシンタックスハイライト
+ * - インラインコードのスタイリング
+ * - カスタムスタイリング（Tailwind CSS）
+ */
+
 'use client'
 
 import ReactMarkdown from 'react-markdown'
@@ -5,7 +18,7 @@ import remarkGfm from 'remark-gfm'
 import { CodeBlock } from './code-block'
 
 interface MarkdownRendererProps {
-  content: string
+  content: string    // レンダリングするMarkdownテキスト
 }
 
 export function MarkdownRenderer({ content }: MarkdownRendererProps) {

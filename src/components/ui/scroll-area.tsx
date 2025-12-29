@@ -1,3 +1,9 @@
+/**
+ * スクロールエリアコンポーネント（shadcn/ui）
+ *
+ * このファイルはカスタムスクロールバーを持つスクロール可能なエリアを定義します。
+ */
+
 "use client"
 
 import * as React from "react"

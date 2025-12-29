@@ -1,3 +1,16 @@
+/**
+ * ルートレイアウト
+ *
+ * このファイルはアプリケーション全体のレイアウトを定義します。
+ * 全てのページで共通して適用される設定やコンポーネントを含みます。
+ *
+ * 【役割】
+ * - HTML の基本構造を定義
+ * - フォント設定（Geist Sans / Geist Mono）
+ * - メタデータ（SEO、OGP）の設定
+ * - テーマプロバイダーの適用（ダークモード対応）
+ */
+
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'

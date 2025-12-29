@@ -1,3 +1,10 @@
+/**
+ * ボタンコンポーネント（shadcn/ui）
+ *
+ * このファイルは再利用可能なボタンコンポーネントを定義します。
+ * 複数のバリアント（スタイル）とサイズをサポートします。
+ */
+
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"

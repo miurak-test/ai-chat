@@ -1,3 +1,16 @@
+/**
+ * チャット入力コンポーネント
+ *
+ * このファイルはユーザーがメッセージを入力・送信するための入力フォームを定義します。
+ *
+ * 【機能】
+ * - テキストエリアでのメッセージ入力
+ * - 自動高さ調整（入力内容に応じて拡大）
+ * - Enter キーで送信、Shift + Enter で改行
+ * - 送信ボタン（空白のみのメッセージは送信不可）
+ * - 送信中の入力無効化
+ */
+
 'use client'
 
 import { useState, useRef, useEffect, KeyboardEvent } from 'react'
@@ -6,8 +19,8 @@ import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 
 interface ChatInputProps {
-  onSend: (message: string) => void
-  disabled?: boolean
+  onSend: (message: string) => void    // メッセージ送信時のコールバック
+  disabled?: boolean                    // 入力無効化フラグ（送信中など）
 }
 
 export function ChatInput({ onSend, disabled }: ChatInputProps) {

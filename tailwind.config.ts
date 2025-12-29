@@ -1,3 +1,15 @@
+/**
+ * Tailwind CSS 設定ファイル
+ *
+ * このファイルはTailwind CSSのカスタム設定を定義します。
+ *
+ * 【設定内容】
+ * - ダークモード対応（class ベース）
+ * - カスタムカラースキーム（shadcn/ui 準拠）
+ * - カスタムボーダー半径
+ * - アニメーションプラグイン
+ */
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {

@@ -1,3 +1,15 @@
+/**
+ * メッセージアイテムコンポーネント
+ *
+ * このファイルは個別のメッセージ（ユーザーまたはAI）を表示するコンポーネントを定義します。
+ *
+ * 【機能】
+ * - ユーザー/AIアバターの表示
+ * - メッセージ本文の表示（ユーザー: プレーンテキスト、AI: Markdown）
+ * - コピーボタン（メッセージをクリップボードにコピー）
+ * - 視覚的な区別（ユーザーとAIで背景色を変える）
+ */
+
 'use client'
 
 import { useState } from 'react'
@@ -8,8 +20,8 @@ import { MarkdownRenderer } from './markdown-renderer'
 import { cn } from '@/lib/utils'
 
 interface MessageItemProps {
-  role: 'user' | 'assistant'
-  content: string
+  role: 'user' | 'assistant'    // 送信者（ユーザーまたはAI）
+  content: string               // メッセージ本文
 }
 
 export function MessageItem({ role, content }: MessageItemProps) {

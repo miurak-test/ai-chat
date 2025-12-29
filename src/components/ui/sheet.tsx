@@ -1,3 +1,9 @@
+/**
+ * シートコンポーネント（shadcn/ui）
+ *
+ * このファイルは画面端からスライドして表示されるパネルコンポーネントを定義します。
+ */
+
 "use client"
 
 import * as React from "react"

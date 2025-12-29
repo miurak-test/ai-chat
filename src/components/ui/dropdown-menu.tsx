@@ -1,3 +1,9 @@
+/**
+ * ドロップダウンメニューコンポーネント（shadcn/ui）
+ *
+ * このファイルはドロップダウン形式のメニューコンポーネントを定義します。
+ */
+
 "use client"
 
 import * as React from "react"
