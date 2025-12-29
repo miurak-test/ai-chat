@@ -24,12 +24,12 @@
           <mxGeometry x="60" y="240" width="120" height="40" as="geometry" />
         </mxCell>
 
-        <!-- GCP Section -->
+        <!-- Google Cloud Section -->
         <mxCell id="gcp-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="280" y="80" width="600" height="340" as="geometry" />
+          <mxGeometry x="280" y="80" width="600" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="gcp-label" value="Google Cloud Platform" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="290" y="90" width="180" height="20" as="geometry" />
+        <mxCell id="gcp-label" value="Google Cloud (プロジェクト: miuken)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="290" y="90" width="280" height="20" as="geometry" />
         </mxCell>
 
         <!-- Cloud Run -->
@@ -62,60 +62,77 @@
 
         <!-- Artifact Registry -->
         <mxCell id="artifact-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="600" y="290" width="160" height="100" as="geometry" />
+          <mxGeometry x="600" y="290" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="artifact-label" value="Artifact Registry" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="620" y="300" width="120" height="20" as="geometry" />
+        <mxCell id="artifact-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://symbols.getvecta.com/stencil_4/3_google-artifact-registry.e5765a3fe6.svg" vertex="1" parent="1">
+          <mxGeometry x="610" y="300" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="artifact-desc" value="Docker イメージ&#xa;保存場所" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="610" y="330" width="140" height="50" as="geometry" />
+        <mxCell id="artifact-label" value="Artifact Registry&#xa;(Docker イメージ)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="650" y="305" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Build -->
+        <mxCell id="cloudbuild-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="600" y="385" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudbuild-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://symbols.getvecta.com/stencil_4/19_google-cloud-build.0c665ab8c4.svg" vertex="1" parent="1">
+          <mxGeometry x="610" y="395" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudbuild-label" value="Cloud Build" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="655" y="405" width="100" height="20" as="geometry" />
         </mxCell>
 
         <!-- MongoDB Section -->
         <mxCell id="mongodb-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="320" y="450" width="200" height="140" as="geometry" />
+          <mxGeometry x="320" y="500" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="mongodb-label" value="MongoDB Atlas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="360" y="460" width="120" height="20" as="geometry" />
+          <mxGeometry x="360" y="510" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="mongodb-icon" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="390" y="490" width="60" height="60" as="geometry" />
+          <mxGeometry x="390" y="540" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="mongodb-desc" value="会話・メッセージ保存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="330" y="555" width="180" height="20" as="geometry" />
+          <mxGeometry x="330" y="600" width="180" height="20" as="geometry" />
         </mxCell>
 
         <!-- GitHub Section -->
         <mxCell id="github-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
-          <mxGeometry x="600" y="450" width="160" height="140" as="geometry" />
+          <mxGeometry x="600" y="500" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="github-label" value="GitHub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
-          <mxGeometry x="650" y="460" width="60" height="20" as="geometry" />
+          <mxGeometry x="650" y="510" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="github-icon" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" vertex="1" parent="1">
+          <mxGeometry x="655" y="540" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="github-desc" value="ソースコード管理&#xa;CI/CD (Actions)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="610" y="530" width="140" height="50" as="geometry" />
+          <mxGeometry x="610" y="590" width="140" height="30" as="geometry" />
         </mxCell>
 
-        <!-- Arrows -->
-        <mxCell id="arrow1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066CC;" edge="1" parent="1" source="user-icon" target="cloudrun-box">
+        <!-- Arrows with numbers -->
+        <mxCell id="arrow1" value="① HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066CC;" edge="1" parent="1" source="user-icon" target="cloudrun-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow2" value="API呼出" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#009900;" edge="1" parent="1" source="cloudrun-box" target="vertexai-box">
+        <mxCell id="arrow2" value="② API呼出" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#009900;" edge="1" parent="1" source="cloudrun-box" target="vertexai-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow3" value="データ保存" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#009900;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cloudrun-box" target="mongodb-group">
+        <mxCell id="arrow3" value="③ データ保存" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#009900;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cloudrun-box" target="mongodb-group">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow4" value="デプロイ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;" edge="1" parent="1" source="github-group" target="artifact-box">
+        <mxCell id="arrow4" value="④ push" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;" edge="1" parent="1" source="github-group" target="cloudbuild-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="arrow5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="artifact-box" target="cloudrun-box">
+        <mxCell id="arrow5" value="⑤ ビルド" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;" edge="1" parent="1" source="cloudbuild-box" target="artifact-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow6" value="⑥ デプロイ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#CC6600;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="artifact-box" target="cloudrun-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
         <!-- Legend -->
         <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="900" y="100" width="180" height="180" as="geometry" />
+          <mxGeometry x="900" y="100" width="180" height="200" as="geometry" />
         </mxCell>
         <mxCell id="legend-title" value="凡例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
           <mxGeometry x="960" y="110" width="60" height="20" as="geometry" />
@@ -146,6 +163,17 @@
         </mxCell>
         <mxCell id="legend3-text" value="CI/CD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
           <mxGeometry x="980" y="200" width="90" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Data Flow Description -->
+        <mxCell id="flow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="320" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-title" value="データフロー" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="945" y="330" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-desc" value="① ユーザーがアクセス&#xa;② AI に問い合わせ&#xa;③ 会話を保存&#xa;④ コードをプッシュ&#xa;⑤ イメージをビルド&#xa;⑥ アプリをデプロイ" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="910" y="355" width="160" height="120" as="geometry" />
         </mxCell>
 
       </root>
